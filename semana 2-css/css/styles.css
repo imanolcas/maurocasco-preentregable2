@@ -5,8 +5,8 @@
     
 }
 
-body{
-    background-color: #dfb62f;
+ body{
+    background-color: #dfb62f !important;
     color: #171614;
 }
 
@@ -20,6 +20,7 @@ nav{
 .nav-img{
     display: flex;
     justify-content: center;
+    color: white;
 
 }
 
@@ -190,6 +191,7 @@ footer h3{
     min-width: 300px;
     height: 250px;
     margin: 10px;
+    justify-content: center;
 }
 
 .vision-contenido{
