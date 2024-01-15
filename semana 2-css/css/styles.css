@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+body{
+    background-color: #dfb62f;
+    color: #171614;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #171614;
+}
+
+.nav-img{
+    display: flex;
+    justify-content: center;
+
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav-links a{
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer{
+    padding: 20px;
+    color: #fff;
+    background-color: #171614;
+}
+
+footer h3{
+    font-size: 2rem;
+}
+
+.footer-links{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipo{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.equipo span{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.equipo li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.equipo a{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ayudar{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+}
+
+.ayudar span{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.ayudar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.ayudar a{
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes li{
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-redes a{
+    display: flex;
+    color: #fff;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* termina la parte semantica */
+
+/* Empieza la pagina inicio */
+
+.main-inicio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.contenido-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.contenido-index h1{
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.text-img-index{
+    display: flex;
+
+}
+
+.contenido-index p{
+    width: 300px;
+    margin-right: 10px;
+}
+
+.img-index img{
+    min-width: 200px;
+    height: 200px;
+}
+
+/* Termina la pagina de inicio */
+
+
+/* Empieza la pagina nosotros */
+
+.main-nosotros h1{
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.vision img{
+    min-width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+.vision-contenido{
+    width: 30ch;
+    margin: 10px;
+}
+
+.vision-contenido h3{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.mision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.mision img{
+    min-width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+.mision-contenido{
+    width: 40ch;
+    margin: 10px;
+}
+
+.mision-contenido h3{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+/* Termina la pagina de nosotros */
+
+/* Empieza la pagina de donaciones */
+
+.main-donaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-donaciones h1{
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.donaciones-img{
+    background-image: url(../media/donaciones-img.jpg);
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: 0;
+    backdrop-filter: blur;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.donaciones-img h2{
+    background-color: rgba(255, 255, 255, 0.651);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.donaciones{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+}
+
+.donaciones-mp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23ch;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.donaciones-mp h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.donaciones-mp span{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.donaciones-mp button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #171614;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+
+
+.donaciones-paypal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23ch;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.donaciones-paypal h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.donaciones-paypal span{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.donaciones-paypal button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #171614;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+/* Temina la pagina de donaciones */
+
+
+/* Empieza la pagina de adopcion */
+
+.main-adopcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-adopcion h1{
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.main-adopcion h3{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.main-adopcion span{
+    width: 20ch;
+    text-align: center;
+    padding: 20px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.tarjetas img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.tarjetas button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #dfb62f;
+    color: #171614;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.tarj-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tarj-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tarj-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tarj-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tarj-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tarj-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 60px 20px;
+    background-color: #171614;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Termina la pagina de adoopcion */
+
+/* Empieza el estilo de contacto */
+
+
+.main-contacto h1{
+    padding: 20px 30px;
+    font-size: 3rem;
+}
+
+.main-contacto form{
+    margin: 30px;
+    background-color: #171614;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-nombre{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.input-nombre input{
+    padding: 5px;
+    background-color: #dfb62f;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-correo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.input-correo input{
+    padding: 5px;
+    background-color: #dfb62f;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-telefono{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.input-telefono input{
+    padding: 5px;
+    background-color: #dfb62f;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-pais{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.input-pais input{
+    padding: 5px;
+    background-color: #dfb62f;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-mensaje{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.input-mensaje textarea{
+    padding: 5px;
+    background-color: #dfb62f;
+    border: none;
+    border-radius: 10px;
+}
+
+.boton-contacto{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #dfb62f;
+    color: #171614;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Termina la pagina de contacto */
+
