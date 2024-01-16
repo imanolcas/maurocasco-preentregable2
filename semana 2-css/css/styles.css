@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    box-sizing: border-box;
 }
 
  body{
@@ -12,22 +12,25 @@
 
 nav{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     padding: 20px;
     background-color: #171614;
+    max-width: auto;
+    justify-content: center;
 }
 
 .nav-img{
     display: flex;
     justify-content: center;
     color: white;
-
+    display: none;
 }
 
 nav img{
     width: 50px;
     height: 50px;
 }
+
 
 .nav-links ul{
     display: flex;
@@ -43,9 +46,15 @@ nav img{
 
 .nav-links a{
     padding: 10px;
-    font-weight: 700;
+    font-weight: 200;
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 530px){
+    .nav-links {
+        display: none;
+    }
 }
 
 footer{
@@ -63,16 +72,16 @@ footer h3{
     margin: 20px;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .equipo{
     display: flex;
-    margin: 20px;
     flex-direction: column;
 }
 
 .equipo span{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px;
 }
 
@@ -90,12 +99,14 @@ footer h3{
 
 .ayudar{
     display: flex;
-    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .ayudar span{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
@@ -128,6 +139,11 @@ footer h3{
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 10px;
+}
+
+iframe{
+    max-width: 150px;
+    max-height: 150px;
 }
 
 /* termina la parte semantica */
@@ -346,7 +362,8 @@ footer h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center ;
+
 }
 
 .main-adopcion h1{
@@ -367,27 +384,34 @@ footer h3{
 
 .tarjetas{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(1, 1fr);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
+    gap: 40px;
+    margin: 40px;
+    flex-wrap: wrap;
 }
 
 .tarjetas img{
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 100%;
     border-radius: 10px;
 }
 
 .tarjetas button{
     margin: 10px;
-    width: 100px;
+    max-width: 200px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #dfb62f;
     color: #171614;
     border: none;
     border-radius: 10px;
     font-weight: 800;
     cursor: pointer;
+    padding: 10px;
 }
 
 .tarj-1{
@@ -395,11 +419,14 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     padding: 60px 20px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
 }
 
 .tarj-2{
@@ -407,11 +434,14 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     padding: 60px 20px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
 }
 
 .tarj-3{
@@ -419,11 +449,14 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    padding: 60px 20px;
+    padding: 60px 25px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
 }
 
 .tarj-4{
@@ -431,11 +464,14 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    padding: 60px 20px;
+    padding: 60px 25px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
 }
 
 .tarj-5{
@@ -443,11 +479,14 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     padding: 60px 20px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
 }
 
 .tarj-6{
@@ -455,11 +494,56 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     padding: 60px 20px;
     background-color: #171614;
     color: #fff;
     border-radius: 20px;
+    /* max-width: 240px;
+    height: 360px; */
+    max-width: 196px;
+    height: 316px;
+}
+
+@media (min-width: 550px) {
+    .tarjetas{
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 1020px) {
+    .tarjetas{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tarj-1{
+        max-width: 240px;
+        height: 360px; 
+    }
+
+    .tarj-2{
+        max-width: 240px;
+        height: 360px; 
+    }
+
+    .tarj-3{
+        max-width: 240px;
+        height: 360px; 
+    }
+
+    .tarj-4{
+        max-width: 240px;
+        height: 360px; 
+    }
+
+    .tarj-5{
+        max-width: 240px;
+        height: 360px; 
+    }
+
+    .tarj-6{
+        max-width: 240px;
+        height: 360px; 
+    }
 }
 
 /* Termina la pagina de adoopcion */
