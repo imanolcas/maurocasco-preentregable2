@@ -52,10 +52,16 @@ nav img{
 }
 
 @media (max-width: 530px){
-    .nav-links {
+    .nav-main{
         display: none;
     }
+
+    .navbar-bootstrap nav, #links-bootstrap {
+        display: block !important;
+    }    
 }
+
+
 
 footer{
     padding: 20px;
