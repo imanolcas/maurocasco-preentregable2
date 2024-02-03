@@ -1,0 +1,39 @@
+/* Empieza la pagina nosotros */
+
+.main-nosotros{ 
+
+        h1{
+        margin: 30px;
+        font-size: 3rem;
+    }
+
+        .vision{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+            img{
+                min-width: 300px;
+                height: 250px;
+                margin: 10px;
+                justify-content: center;
+        }
+    }
+
+        .mision{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        img{
+            min-width: 300px;
+            height: 250px;
+            margin: 10px;
+            justify-content: center;
+        }
+    }
+}
+
+/* Termina la pagina de nosotros */

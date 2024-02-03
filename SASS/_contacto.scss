@@ -1,0 +1,115 @@
+
+/* Empieza el estilo de contacto */
+
+
+.main-contacto {
+    h1{
+        padding: 20px 30px;
+        font-size: 3rem;
+    }
+
+    form{
+    margin: 30px;
+    background-color: #171614;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+        .inputs-datos{
+
+            .input-nombre{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px 0px;
+
+                input{
+                    padding: 5px;
+                    background-color: #dfb62f;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+
+            .input-correo{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px 0px;
+
+                input{
+                    padding: 5px;
+                    background-color: #dfb62f;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+
+            .input-telefono{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px 0px;
+
+                input{
+                    padding: 5px;
+                    background-color: #dfb62f;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+
+           .input-pais{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px 0px;
+
+                input{
+                    padding: 5px;
+                    background-color: #dfb62f;
+                    border: none;
+                    border-radius: 10px;
+                }
+            } 
+
+            
+        }
+
+        .input-mensaje{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.2rem;
+                margin: 20px 0px;
+
+                textarea{
+                    padding: 5px;
+                    background-color: #dfb62f;
+                    border: none;
+                    border-radius: 10px;
+            }
+        }
+
+        .boton-contacto{
+            margin: 10px;
+            width: 100px;
+            height: 30px;
+            background-color: #dfb62f;
+            color: #171614;
+            border: none;
+            border-radius: 10px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Termina la pagina de contacto */

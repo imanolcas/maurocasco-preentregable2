@@ -1,0 +1,81 @@
+/* Empieza la pagina inicio */
+
+.main-inicio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .contenido-index{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 45px;
+
+                    h1{
+                            font-size: 3rem;
+                            margin: 30px;
+            }  
+                    .text-img-index{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #fff;
+                                    background-color: #171614;
+                                    padding: 10px;
+                                    margin: 10px;
+                                    border-radius: 20px;
+                                    p{
+                                        width: 300px;
+                                        margin-right: 10px;
+                                        padding: 10px;
+                                        font-weight: 700;
+                                        text-align: center;
+                }
+
+                                    img{
+                                            width: 400px;
+                                            height: 350px;
+                                            padding: 10px;
+                                            border-radius: 20px;
+                }
+            
+        }
+    }
+}
+
+
+
+@media (max-width:700px) {
+    h1{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .text-img-index{
+        margin: 0px;
+        padding: 0;
+    }
+
+    .text-img-index p{
+        text-align: center;
+        width: 250px;
+        margin-right: 0px;
+        font-weight: 500;
+    }
+
+    img{
+        width: 300px !important;
+        height: 200px !important;
+}
+}
+
+
+
+
+
+
+/* Termina la pagina de inicio */

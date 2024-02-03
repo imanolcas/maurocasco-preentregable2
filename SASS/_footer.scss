@@ -1,0 +1,98 @@
+footer{
+        padding: 20px;
+        color: #fff;
+        background-color: #171614;
+
+        h3{
+            font-size: 2rem;
+    }
+
+        .footer-links{
+                        display: flex;
+                        margin: 20px;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .equipo{
+                                display: flex;
+                                flex-direction: column;
+
+                                span{
+                                    font-size: 1.5rem;
+                                    margin: 10px;
+                                }
+
+                                ul{
+
+                                    li{
+                                        list-style-type: none;
+                                        padding: 10px;
+
+                                        a{
+                                            padding: 10px;
+                                            font-size: 1.2rem;
+                                            color: #fff;
+                                            text-decoration: none;
+                    }
+                }
+            }
+            
+        }
+
+        .ayudar{
+                display: flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                span{
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+                ul{
+
+                    li{
+                        list-style-type: none;
+                        padding: 10px;
+
+                        a{
+                            font-size: 1.2rem;
+                            color: #fff;
+                            text-decoration: none;
+                            padding: 10px;
+                        }
+                    }  
+                }
+            }
+
+        iframe{
+                max-width: 150px;
+                max-height: 150px;
+        }
+
+    }
+
+    .footer-redes{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li{
+                        list-style: none;
+                        padding: 10px;
+
+                        a{
+                            display: flex;
+                            color: #fff;
+                            padding: 5px;
+                            border: 2px solid #fff;
+                            border-radius: 10px;
+            }
+        }
+    }   
+}
+
+/* termina la parte semantica */
